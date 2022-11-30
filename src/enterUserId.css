@@ -1,0 +1,15 @@
+.containerForUserIdPage {
+  width: 25%;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  height: 80px;
+  padding: 1%;
+}
+
+.submitButtonForUserIdPage {
+  position: absolute;
+  left: 35%;
+  top: 100%;
+  cursor: pointer;
+}

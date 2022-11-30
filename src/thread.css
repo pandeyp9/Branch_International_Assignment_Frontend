@@ -1,0 +1,61 @@
+.thread {
+  /* display: flex; */
+  /* border: 5px solid red; */
+  height: 90%;
+  /* background-color: #D1C7C7; */
+  overflow-y: scroll;
+  width: 97vw;
+  position: absolute;
+  top: 1vw;
+  left: 0.8vw;
+}
+.resolvedButton {
+  position: fixed;
+  right: 5%;
+  height: 50px;
+  width: 7%;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.8;
+  /* background-color: ; */
+}
+
+.resolvedButton:hover {
+  position: fixed;
+  right: 5%;
+  height: 50px;
+  width: 7%;
+  z-index: 2;
+  cursor: pointer;
+  /* opacity: 0.8; */
+  opacity: 1;
+}
+
+/* .containerOfMessages {
+  position: absolute;
+  height: 90%;
+  top: 5vw;
+  width: 100%;
+} */
+
+.left {
+  position: relative;
+  background-color: rgb(150, 187, 247);
+  left: 0;
+  padding: 5px;
+  word-break: break-all;
+}
+.right {
+  z-index: 1;
+  text-align: right;
+  position: relative;
+  /* border: 5px solid red; */
+  background-color: rgb(91, 193, 91);
+  right: -45%;
+  padding: 5px;
+  word-break: break-all;
+  /* word-wrap: break-word; */
+}
+.message {
+  border-radius: 10px;
+}

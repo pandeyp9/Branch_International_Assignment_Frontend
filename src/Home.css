@@ -1,0 +1,23 @@
+.Row {
+  display: flex;
+}
+
+.contentRow {
+  cursor: pointer;
+}
+
+.priority {
+  background-color: rgb(239, 111, 106);
+}
+.userID {
+  margin: 20px;
+  width: 20%;
+}
+.message {
+  margin: 20px;
+  width: 50%;
+}
+.timeStamp {
+  margin: 20px;
+  width: 20%;
+}
