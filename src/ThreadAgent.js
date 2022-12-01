@@ -8,64 +8,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./textField.css";
 import "./thread.css";
 
-// const dummy = [
-//   {
-//     user: "atul",
-//     agent: "anand",
-//     messages: [
-//       {
-//         text: "Anand------jhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       {
-//         text: "khkhdfkjsdahfkjasdf panmbdnzbxkfcbd----- Anand",
-//         messagedBy: "agent",
-//       },
-//       {
-//         text: "khkhdfkjsdahfkjasdf panmbdnzbxkfcbd----- Anajsdfand",
-//         messagedBy: "agent",
-//       },
-//     ],
-//   },
-// ];
-
 function ThreadAgent() {
   const { agentID, threadID } = useParams();
   const [textFieldValue, setTextFieldValue] = useState("");

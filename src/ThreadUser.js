@@ -8,69 +8,9 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./textField.css";
 import "./thread.css";
 
-// const dummy = [
-//   {
-//     user: "atul",
-//     agent: "anand",
-//     messages: [
-//       {
-//         text: "Anand------jhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       { text: "khkhdfkjsdahfkjasdf", messagedBy: "agent" },
-//       {
-//         text: "dajsfhkjhghfhjjjhgfywefgiuwegfiweufwriiweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusdakjfhkjdsah",
-//         messagedBy: "agent",
-//       },
-//       { text: "kshfhkkjshadkfjhasd", messagedBy: "user" },
-//       {
-//         text: "khkhdfkjsdahfkjasdf panmbdnzbxkfcbd----- Anand",
-//         messagedBy: "agent",
-//       },
-//       {
-//         text: "khkhdfkjsdahfkjasdf panmbdnzbxkfcbd----- Anajsdfand",
-//         messagedBy: "agent",
-//       },
-//     ],
-//   },
-// ];
-
 function ThreadUser() {
   const { agentID, threadID } = useParams();
-  // console.log(agentID, threadID);
   const [textFieldValue, setTextFieldValue] = useState("");
-  // console.log(agentID, threadID);
   const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
   const [userID, setUserID] = useState("");
@@ -95,9 +35,7 @@ function ThreadUser() {
   }, []);
 
   const handleClickOnSendButton = () => {
-    // console.log(textFieldValue);
     fetch("http://localhost:5000/message", {
-      // Adding method type
       method: "POST",
 
       // Adding body or contents to send

@@ -7,22 +7,6 @@ function Home() {
     // console.log(agentID, threadID);
     navigate(`../threadAgent/${agentID}/${threadID}`, {replace: true});
   }
-  // const dummy = [
-  //   {
-  //     _id: 1,
-  //     user: "1",
-  //     messages: [{ text: "dajsfhkjhsdakjfhkjdsah", messagedBy: "0" }],
-  //     timeStamp: "32232",
-  //     priority: 1,
-  //   },
-  //   {
-  //     _id: 2,
-  //     user: "11",
-  //     messages: [{ text: "dajsfhkjhsdakjfhkjdsah", messagedBy: "0" }],
-  //     timeStamp: "322132",
-  //     priority: 0,
-  //   },
-  // ];
   const [data, setData] = useState([]); 
   const {agentID} = useParams();
 
